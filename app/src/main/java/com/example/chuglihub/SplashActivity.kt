@@ -22,18 +22,15 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        // Initialize views
         logoImage = findViewById(R.id.logoImage)
         appName = findViewById(R.id.appName)
         appTagline = findViewById(R.id.appTagline)
         loadingSpinner = findViewById(R.id.loadingSpinner)
 
-        // Load animations
         val fadeIn = AnimationUtils.loadAnimation(this, R.anim.fade_in)
         val slideUp = AnimationUtils.loadAnimation(this, R.anim.slide_up)
         val bounce = AnimationUtils.loadAnimation(this, R.anim.bounce)
 
-        // Start animations with delays
         logoImage.startAnimation(bounce)
 
         Handler(Looper.getMainLooper()).postDelayed({
@@ -51,12 +48,11 @@ class SplashActivity : AppCompatActivity() {
             loadingSpinner.startAnimation(fadeIn)
         }, 1500)
 
-        // Navigate to main activity after splash duration
         Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this@SplashActivity, MainActivity::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
             finish()
-        }, 3000) // 3 seconds splash time
+        }, 3000)
     }
 }

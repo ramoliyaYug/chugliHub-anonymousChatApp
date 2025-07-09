@@ -45,7 +45,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Initialize views
         inputMsg = findViewById(R.id.inputMsg)
         btnSend = findViewById(R.id.btnSend)
         btnImage = findViewById(R.id.btnImage)
@@ -53,22 +52,18 @@ class MainActivity : AppCompatActivity() {
         toolbar = findViewById(R.id.toolbar)
         usernameDisplay = findViewById(R.id.usernameDisplay)
 
-        // Set up toolbar
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayShowTitleEnabled(false)
 
-        // Get and display username
         currentUsername = SharedPrefHelper.getUsername(this)
         usernameDisplay.text = currentUsername
 
-        // Set up RecyclerView
         adapter = GossipAdapter(messages, currentUsername)
         recyclerView.layoutManager = LinearLayoutManager(this).apply {
             stackFromEnd = true
         }
         recyclerView.adapter = adapter
 
-        // Send message
         btnSend.setOnClickListener {
             val text = inputMsg.text.toString().trim()
             if (text.isNotEmpty()) {
@@ -86,13 +81,11 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        // Select image
         btnImage.setOnClickListener {
             val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
             startActivityForResult(intent, PICK_IMAGE)
         }
 
-        // Load messages from Firebase
         database.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 messages.clear()

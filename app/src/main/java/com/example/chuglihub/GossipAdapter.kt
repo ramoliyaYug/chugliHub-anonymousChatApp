@@ -42,12 +42,10 @@ class GossipAdapter(private val list: List<GossipModel>, private val currentUser
         val isFromCurrentUser = item.senderName == currentUsername
 
         if (holder is TextViewHolder) {
-            // Set text and metadata
             holder.sender.text = item.senderName
             holder.message.text = item.message
             holder.time.text = time
 
-            // Update bubble styling based on sender
             val container = holder.itemView.findViewById<LinearLayout>(R.id.messageContainer)
             if (isFromCurrentUser) {
                 container.background = ContextCompat.getDrawable(holder.itemView.context, R.drawable.bubble_self_background)
@@ -65,11 +63,9 @@ class GossipAdapter(private val list: List<GossipModel>, private val currentUser
                 }
             }
         } else if (holder is ImageViewHolder) {
-            // Set metadata
             holder.sender.text = item.senderName
             holder.time.text = time
 
-            // Update bubble styling based on sender
             val container = holder.itemView.findViewById<LinearLayout>(R.id.messageContainer)
             if (isFromCurrentUser) {
                 container.background = ContextCompat.getDrawable(holder.itemView.context, R.drawable.bubble_self_background)
@@ -87,7 +83,6 @@ class GossipAdapter(private val list: List<GossipModel>, private val currentUser
                 }
             }
 
-            // Load image
             Executors.newSingleThreadExecutor().execute {
                 try {
                     val stream = URL(item.imageUrl).openStream()
