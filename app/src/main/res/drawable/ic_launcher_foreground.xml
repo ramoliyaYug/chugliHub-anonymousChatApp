@@ -1,0 +1,35 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="240"
+    android:viewportHeight="240">
+
+    <!-- Chat bubble 1 -->
+    <path
+        android:fillColor="#5E35B1"
+        android:pathData="M70,70 L70,125 L95,125 L120,145 L120,125 L150,125 L150,70 Z" />
+
+    <!-- Chat bubble 2 -->
+    <path
+        android:fillColor="#FF4081"
+        android:pathData="M170,90 L170,145 L145,145 L120,165 L120,145 L90,145 L90,90 Z" />
+
+    <!-- Sparkle 1 -->
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M50,55 L55,45 L60,55 L70,60 L60,65 L55,75 L50,65 L40,60 Z" />
+
+    <!-- Dots -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M110,97.5m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M130,97.5m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M110,117.5m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M130,117.5m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+</vector>

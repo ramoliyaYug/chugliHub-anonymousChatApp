@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "680041643346",
+    "firebase_url": "https://chatappandroid-4a32b-default-rtdb.firebaseio.com",
+    "project_id": "chatappandroid-4a32b",
+    "storage_bucket": "chatappandroid-4a32b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680041643346:android:cd9b7acd6110c663278e8b",
+        "android_client_info": {
+          "package_name": "com.example.chatappfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMxUt3IA7qR0s6kvyn9Png-El7oInEKJo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680041643346:android:e1777b833816b770278e8b",
+        "android_client_info": {
+          "package_name": "com.example.chuglihub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMxUt3IA7qR0s6kvyn9Png-El7oInEKJo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

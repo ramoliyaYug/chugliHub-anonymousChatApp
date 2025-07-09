@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary color scheme -->
+    <color name="primary">#5E35B1</color>
+    <color name="primary_dark">#4527A0</color>
+    <color name="primary_light">#D1C4E9</color>
+    <color name="accent">#FF4081</color>
+
+    <!-- Text colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#BDBDBD</color>
+
+    <!-- Standard colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Message bubble colors -->
+    <color name="bubble_background">#F1F0F5</color>
+    <color name="bubble_self_background">#E6F5F3</color>
+    <color name="sender_name">#5E35B1</color>
+    <color name="timestamp">#9E9E9E</color>
+
+    <!-- UI elements -->
+    <color name="divider">#EEEEEE</color>
+    <color name="ripple">#33000000</color>
+</resources>
