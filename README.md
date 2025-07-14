@@ -35,7 +35,7 @@
 
 ## 📦 Download APK
 
-🌐 Or browse it on [AppMandi](https://ramoliyayug.github.io/appMandi/ChugliHub/chugliHub.html)
+🌐 browse it on [AppMandi](https://ramoliyayug.github.io/appMandi/ChugliHub/chugliHub.html)
 
 ---
 
